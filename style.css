@@ -134,8 +134,10 @@
     font-size: 2.2rem;
     margin-bottom:12px ;
     font-weight: 600;
+    
 }
 .about-text--top p{
+    font-size: 1.2rem;
     color: var(--font-color);
 }
 .about-icon{
@@ -156,11 +158,11 @@
 .card-img-top img{
     width: 100%;
 }
-.card-title{
+.info-card-title{
     color: var(--back-color);
     font-weight: 600;
 }
-.card-title:hover{
+.info-card-title:hover{
     color: var(--secondary-color);
     text-decoration: none;
     transition: ease .3s;
@@ -211,8 +213,14 @@
     line-height: 8px;
 }
 .title-gallery h1{
+    color: var(--back-color);
     font-size: 2.2rem;
+    margin-bottom: 20px;
     font-weight: 600;
+}
+.title-gallery p{
+    font-size: 1.2rem;
+    color: var(--font-color);
 }
 .item-gallery{
     position: relative;
@@ -235,6 +243,86 @@
 .img-gallery{
     width: 100%;
     height: auto;
+}
+.dogservice i{
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.pet-bg{
+    background-image: url(img/bg.jpg);
+    background-position:center;
+    background-attachment: fixed;
+}
+.pet-info h6,h1{
+    color: var(--white-color);
+}
+.pet-info h6{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.pet-info h1{
+    font-weight: 600;
+}
+.btn-pet-info{
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    margin-top: 30px;
+    transition: all ease .3s;
+}
+.btn-pet-info:hover{
+    background-color: transparent;
+    color: var(--white-color);
+    
+}
+.blog-card{
+    transition: all ease .3s;
+}
+.blog-card:hover{
+    box-shadow: 0 10px 30px -5px var(--shadow-color);
+}
+.blog-heading h1{
+    color: var(--back-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.blog-heading p{
+    color: var(--font-color);
+    font-size: 1.2rem;
+}
+.blog-card-day{
+    color: var(--primary-color);
+    text-align: right;
+    font-style: italic;
+    font-weight: 600;
+}
+.blog-card-title{
+    color: var(--back-color);
+    font-size: 1.2rem;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}
+.blog-card-title:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.blog-link-more i{
+    margin-left: 5px;
+}
+.blog-link-more{
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all ease .3s;
+    text-transform: uppercase;
+}
+.blog-link-more:hover{
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 @media screen and (max-width:1200px){
     .logo a{
