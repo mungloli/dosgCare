@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: raleway;
+}
+
+:root {
+    --primary-color: #1A2C79;
+    --secondary-color: #f85a40;
+    --white-color: #ffffff;
+    --font-color: #707070;
+    --back-color: #000000;
+    --shadow-color: rgba(10, 16, 34, .2);
+    --bg-light: #fafafa;
+}
+
+.bg-about {
+    background-image: url(../img/bg-about.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.bg-about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 0;
+    background: linear-gradient(75deg, rgb(6 6 6 / 64%) 8%, transparent);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.custom-path {
+    padding-top: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.custom-path h4 {
+    color: var(--white-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.custom-path span {
+    color: var(--white-color);
+    opacity: .8;
+    font-size: 1rem;
+}
+
+.custom-path i {
+    color: var(--white-color);
+    opacity: .8;
+    margin: 0 5px;
+    font-size: .7rem;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: all ease .3s;
+}
+
+.logo a:hover {
+    color: var(--secondary-color);
+}
+
+.logo i {
+    margin-right: 5px;
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.link-main {
+    display: inline;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.link-main:hover {
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+    transition: linear .3s;
+}
+
+.search-form {
+    width: 227px;
+    height: 40px;
+    background-color: var(--white-color);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.search-form input {
+    outline: none;
+    padding-left: 8px;
+    border: unset;
+}
+
+.search-form button {
+    padding: 8px;
+    border: unset;
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+}
+
+.search-form button:hover {
+    color: var(--primary-color);
+    transition: ease .3s;
+}
+
+.control {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    padding: 15px;
+}
+
+.control:hover {
+    color: var(--secondary-color);
+    transition: ease .3s;
+}
+
+.about-left h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-left p {
+    color: var(--font-color);
+}
+
+.about-left ul li {
+    padding: 8px 0;
+}
+
+.about-left ul li i {
+    margin-right: 5px;
+    color: var(--secondary-color);
+}
+
+.about-left-button button {
+    padding: 8px 18px;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--white-color);
+    transition: all ease .3s;
+}
+
+.about-left-button button:hover {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+}
+
+.team {
+    background-color: var(--bg-light);
+}
+
+.team-title h2 {
+    color: var(--back-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.team-title p {
+    color: var(--font-color);
+}
+
+.card-title {
+    transition: ease .3s;
+    font-weight: 600;
+}
+
+.card-text {
+    color: var(--font-color);
+}
+
+.img-card-team {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform ease .5s;
+}
+
+.card-team:hover img {
+    transform: scale(1.1);
+}
+
+.card-team:hover h4 {
+    color: var(--secondary-color);
+}
+
+.team-info {
+    text-align: center;
+}
+
+.team-info a {
+    color: var(--font-color);
+    padding: 0 3px;
+    margin: 0 3px;
+    transition: ease .3s;
+}
+
+.team-info a:hover {
+    color: var(--secondary-color);
+}
+
+.custom-heding {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.custom-text {
+    color: var(--font-color);
+}
+
+.custom-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.quote-1::before {
+    font-size: 50px;
+    color: var(--primary-color);
+    line-height: 8px;
+}
+
+.quote-2::before {
+    font-size: 50px;
+    color: var(--primary-color);
+    line-height: 8px;
+}
+
+.footer {
+    background-color: var(--back-color);
+}
+
+.footer-border {
+    border-bottom: 1px solid var(--font-color);
+}
+
+.footer-logo a {
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.footer-logo i {
+    color: var(--secondary-color);
+    margin-right: 5px;
+}
+
+.footer-logo p {
+    color: #d4d4d4;
+}
+
+.nav-footer h5 {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-footer i {
+    margin-right: 5px;
+}
+
+.nav-footer a {
+    color: var(--white-color);
+    transition: all ease .3s;
+}
+
+.nav-footer a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-form p {
+    color: #d4d4d4;
+    margin-top: 20px;
+}
+
+.footer-form h5 {
+    color: var(--white-color);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.footer-form button {
+    width: 70px;
+    background-color: var(--secondary-color);
+    outline: none;
+    border: none;
+}
+
+.footer-form button:hover {
+    background-color: rgba(248, 90, 64, 0.8);
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info p {
+    margin: 0;
+    color: #d4d4d4;
+}
+
+.footer-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: rgb(41 41 41 / 27%);
+    transition: all ease .3s;
+}
+
+.footer-info a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+}
